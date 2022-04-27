@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# หมวกคัดสรร
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## เตรียมเครื่องกันก่อน
 
-## Available Scripts
+ก่อนการรันระบบในเครื่องของท่านจำเป็นต้องมี
 
-In the project directory, you can run:
+- Node.js เวอร์ชั่น 17 ขึ้นไป (ลิงก์การติดตั้งสามารถศึกษาได้จาก [สำหรับ Windows](https://kb.hostatom.com/content/6104/) หรือ [สำหรับ macOS](https://www.newline.co/@Adele/how-to-install-nodejs-and-npm-on-macos--22782681))
+- git (ลิงก์การติดตั้งสามารถศึกษาได้จาก [สำหรับ Windows](https://medium.com/touch-technologies/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87-git-%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%86-%E0%B8%A0%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%99-3-%E0%B8%99%E0%B8%B2%E0%B8%97%E0%B8%B5-3c8257127c40) หรือ [สำหรับ macOS](https://br.atsit.in/th/?p=1010))
 
-### `yarn start`
+เมื่อท่านติดตั้ง Node.js และ git สำเร็จแล้ว สามารถทดสอบการติดตั้งได้ผ่านคำสั่ง
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+    node -v # 17.8.0
+    git --version # git version 2.35.1
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+นอกจากคำสั่ง node, git ท่านจำเป็นต้องตรวจสอบการติดตั้ง Node package manager ด้วยคำสั่ง `npm` ด้วยการพิมพ์
 
-### `yarn test`
+```sh
+    npm -version # 8.6.0
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## มาลองใช้งานกัน !!
 
-### `yarn build`
+### Clone Project กันก่อนนะ
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+    git clone <git_repo_url> sorting-hat
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+เข้าไปยังโฟลเดอร์ที่ clone ด้วย
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+    cd sorting-hat
+```
 
-### `yarn eject`
+ติดตั้ง package ของโปรเจคกัน
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+    npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+มาลองรันโปรเจคกัน
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+    npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+หากสำเร็จจะได้ผลตามภาพครับ
+![ผลลัพธ์จาก command npm start](/public/npm_start_result.png)
 
-## Learn More
+และสามารถเข้าดูระบบได้ผ่านลิงก์ `https://localhost:3000` ซึ่งแสดงผลตามภาพครับ
+![หมวกคัดสรร](/public/screenshot.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## การใช้งาน
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. พิมพ์ชื่อของนักเรียนที่ได้รับคัดสรร
+2. กดปุ่ม `คัดสรรฉันสิ`
+3. ระบบจะแสดง `ชื่อนักเรียน` พร้อม `ชื่อบ้าน` ตามภาพ
+   ![ภาพผลลัพธ์จากการคัดสรร](/public/show-results.png)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> สำหรับจำนวนที่หมวดคัดสรร ได้คัดสรรไปแล้ว พร้อมจำนวนนักเรียนที่ถูกคัดสรร แยกตามบ้าน พร้อมทั้งประวัติการคัดสรร 6 รายการล่าสุด ซึ่งอยู่บริเวณด้านล่างของเว็บครับ
+> ![แสดงสถิติ และประวัติการคัดเลือก](/public/stats.png)
